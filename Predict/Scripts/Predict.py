@@ -71,7 +71,6 @@ def One_hot(dataframe):
     return np.array(encodings).astype(np.float64)
 
 def predict(dataframe, model_path, save_path):
-    mkdir(save_path)
     x = One_hot(dataframe)
     sign = list(dataframe['Protein'])
     name = []
@@ -123,6 +122,7 @@ if __name__ == '__main__':
         dataset = get_dataset(args.file)
         net_path = os.path.join(parent_dir, 'Models')
         res_path = os.path.join(parent_dir, 'Results')
+        mkdir(res_path)
         result_path = os.path.join(res_path, str(time.time()).split('.')[0] + '.csv')
         predict(dataset, net_path, result_path)
     else:
