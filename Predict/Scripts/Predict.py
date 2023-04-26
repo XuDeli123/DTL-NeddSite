@@ -1,5 +1,5 @@
 import os.path
-import re
+import os, re
 import sys
 import time
 import numpy as np
@@ -20,6 +20,19 @@ def file_check(filename):
             fasta = SeqIO.parse(handle, "fasta")
             return any(fasta)
 
+def mkdir(path):
+    path=path.strip()
+    path=path.rstrip("\\")
+    # 判断路径是否存在
+    isExists=os.path.exists(path)
+    # 判断结果
+    if not isExists:
+        # 如果不存在则创建目录
+        os.makedirs(path)
+    else:
+        # 如果目录存在则不创建
+        pass
+    
 def get_dataset(filepath):
     try:
         predict_id = []
@@ -58,6 +71,7 @@ def One_hot(dataframe):
     return np.array(encodings).astype(np.float64)
 
 def predict(dataframe, model_path, save_path):
+    mkdir(save_path)
     x = One_hot(dataframe)
     sign = list(dataframe['Protein'])
     name = []
