@@ -23,14 +23,10 @@ def file_check(filename):
 def mkdir(path):
     path=path.strip()
     path=path.rstrip("\\")
-    # 判断路径是否存在
     isExists=os.path.exists(path)
-    # 判断结果
     if not isExists:
-        # 如果不存在则创建目录
         os.makedirs(path)
     else:
-        # 如果目录存在则不创建
         pass
     
 def get_dataset(filepath):
