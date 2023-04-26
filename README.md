@@ -11,4 +11,4 @@ Step 1: Locate the predict.py file and set the working directory to its parent d
 Step 2: Specify the fasta file and execute the predict.py file for making predictions. Example command: `python predict.py --file test.fasta`  
 Step 3: Once the execution is complete, the prediction results will be saved in the Results folder.
 # Contact
-Please feel free to contact us if you need any help: lileime@hotmail.com
+Please contact us if you need any help: lileime@hotmail.com
