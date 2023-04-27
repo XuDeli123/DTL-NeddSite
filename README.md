@@ -1,7 +1,7 @@
 # DTL-NeddSite
 DTL-NeddSite: Deep Transfer Learning Based Architecture for Lysine Neddylation Sites Prediction
 # Datasets Description
-We use experimentally validated human NEDD peptide data. Our procedure is designed to prepare benchmark datasets with high confidence for ten-fold cross-validation and independent tests
+We provide positive and negative site data used in model training and testing.
 # Programming language
 Python 3.8 and above
 # Environment configuration information
