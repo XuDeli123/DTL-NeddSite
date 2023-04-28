@@ -10,8 +10,8 @@ Python 3.8 and above
 # Environment configuration information
 The python package names with version numbers are stored in tensorflow.yaml.
 # Using DTL-NeddSite to predict neddylation sites
-Step 1: Locate the /Predict/Scripts/predict.py file and set the working directory to its parent directory "Scripts".
-Step 2: Specify the fasta file and execute the predict.py file for making predictions. Example command: python predict.py --file test.fasta
+Step 1: Locate the /Predict/Scripts/predict.py file and set the working directory to its parent directory "Scripts".  
+Step 2: Specify the fasta file and execute the predict.py file for making predictions. Example command: python predict.py --file test.fasta  
 Step 3: Once the execution is complete, the prediction results will be output to the folder "Results".
 # Contact
 Please contact us if you need any help: lileime@hotmail.com
