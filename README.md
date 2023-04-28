@@ -1,7 +1,7 @@
 # DTL-NeddSite
 DTL-NeddSite: Deep Transfer Learning Based Architecture for Lysine Neddylation Sites Prediction
 # Datasets Description
-We provide positive and negative site data used in model training and testing.
+We collected 1715 experimentally verified lysine neddylation sites on 934 human proteins from the literature. After the CD-HIT clustering with a sequence identity of 40%, we obtained 715 protein clusters which contained 1236 neddylation sites as positives and 25,442 lysine non-modified sites. From these non-modified sites, we randomly selected 1236 sites as the negatives.
 # Programming language
 Python 3.8 and above
 # Environment configuration information
